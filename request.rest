@@ -1,0 +1,44 @@
+GET http://localhost:3003/users 
+
+###
+
+POST http://localhost:3003/users 
+Content-Type: application/json
+
+{
+    "name": "Jaime",
+    "email": "jaime@gmail.com",
+    "password": "321"
+}
+
+###
+DELETE http://localhost:3003/users/4
+
+###
+POST http://localhost:3003/products 
+Content-Type: application/json
+
+{
+    "name": "Pen Drive",
+    "price": 30,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51nNCdNfpWL.__AC_SX300_SY300_QL70_ML2_.jpg"
+}
+
+###
+
+GET http://localhost:3003/products?name=e&order=asc
+
+
+###
+POST http://localhost:3003/purchases 
+Content-Type: application/json
+
+{
+    "user_id": 3,
+    "products_id": 4,
+    "quantity": 2
+}
+
+###
+
+GET http://localhost:3003/users/3/purchases/
