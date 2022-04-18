@@ -42,3 +42,6 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3003/users/3/purchases/
+
+###
+GET https://aula-labecommerce.herokuapp.com/users
